@@ -1,9 +1,9 @@
-id: tomcat-instance
+id: public-tomcat-instance
 
 info:
   name: tomcat manager disclosure
   author: Ahmed Sherif
-  severity: low
+  severity: informative
 
 requests:
   - method: GET
@@ -13,7 +13,7 @@ requests:
     matchers:
       - type: word
         words:
-          - '"Unauthorized":'
+          - Apache Tomcat
       - type: status
         status:
           - 401
